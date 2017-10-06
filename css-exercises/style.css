@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Georgia';
+}
+
+body > header {
+  padding: 1em;
+  line-height: 0.5;
+  background-color: #046DD5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+}
+body > header:first-child h2 {
+  font-size: 0.9em;
+}
+#signup {
+  padding-top: 0.3em;
+}
+#signup :not(:first-child):before {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  content: " | ";
+}
+
+nav li {
+  list-style-type: none;
+  text-align: center;
+  padding: 1em;
+  border: 5px solid;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+nav li:first-child {
+  border-top-color: #E1493E;
+}
+nav li:nth-child(2) {
+  border-top-color: #8ABA56;
+}
+nav li:nth-child(3) {
+  border-top-color: #5B4282;
+}
+nav li:nth-child(4) {
+  border-top-color: #FF8932;
+}
+nav li:nth-child(5) {
+  border-top-color: #19B6E9;
+}
+nav li:nth-child(6) {
+  border-top-color: #E84C8B;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header a, #related a {
+  color: white;
+  text-decoration: none;
+}
+
+#related {
+  background-color: #2A2F33;
+  color: white;
+  line-height: 1.3;
+  padding: 1em;
+}
+
+#hamburger {
+  display: none;
+}
+
+#news img {
+  margin-top: 1em;
+  width: 100%;
+  height: 100%;
+}
+
+#news header h1 {
+  position: absolute;
+  width: 230px;
+  font-size: 1.4em;
+  padding: 1em;
+  text-shadow: 3px 3px 5px black;
+}
+
+#news p {
+  margin: 1em;
+}
+
+#news p::first-letter {
+  font-size: 1.9em;
+}
+
+footer {
+  background-color: #2A2F33;
+  color: white;
+  margin-top: 1em;
+  padding: 0.3em 1em;
+}
+
+#news footer {
+  background-color: #F4655F;
+  color: white;
+  font-size: 0.8em;
+  padding: 1em;
+}
+
+footer .author::before {
+  content: "By "
+}
+footer .tags {
+  padding-right: 1em;
+}
+footer .comments {
+  padding-left: 1em;
+}
+footer a {
+  color: white;
+}
+footer .comments::after {
+  content: " comments";
+}
