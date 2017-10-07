@@ -1,0 +1,29 @@
+body {
+  margin: auto;
+  width: 60em;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+body > header {
+  grid-row-end: span 1;
+  grid-column-end: span 4;
+}
+
+#menu ul {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-end: span 4;
+  display: flex;
+}
+#menu ul li {
+  flex-grow: 0.1;
+}
+
+#related {
+  grid-row-end: span 10;
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
